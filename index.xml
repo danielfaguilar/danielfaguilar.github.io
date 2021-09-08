@@ -5,14 +5,27 @@
     <link>https://danielfaguilar.github.io/</link>
     <description>Recent content on Android Software Developer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://danielfaguilar.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Aug 2021 21:41:47 -0500</lastBuildDate><atom:link href="https://danielfaguilar.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clean Architecture in Android: Part l</title>
+      <link>https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/</link>
+      <pubDate>Sun, 22 Aug 2021 21:41:47 -0500</pubDate>
+      
+      <guid>https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/</guid>
+      <description>In this series I&amp;rsquo;m going to share with you how I structure my code to follow the SOLID principles in order to have a Clean Architecture in Android.
+A little bit of background Clean Architecture Well, in short is a software design philosophy that encapsulates a set of principles that help us as a developers to create a more scalable applications, this principles are the SOLID principles. So it isn&amp;rsquo;t platform dependent, you can use it in any software you develop with any platform.</description>
+    </item>
+    
     <item>
       <title>Projects</title>
       <link>https://danielfaguilar.github.io/projects/</link>
       <pubDate>Mon, 09 Aug 2021 17:22:50 -0500</pubDate>
       
       <guid>https://danielfaguilar.github.io/projects/</guid>
-      <description></description>
+      <description>My Cuisine App Available on the Google Play Store
+
+Technical features  Architectural pattern MVVM and MVI Screaming Architecture Dark theme support Reactive extensions  RxJava and RxAndroid   Room for database Dagger Hilt for the dependecy injection Navigation component Kotlin Coroutines Kotlin JUnit, espresso and mockito for testing  Favorez App When the pandemic came I see an opportunity to help other people to make an extra income doing home delivery.</description>
     </item>
     
     <item>
@@ -21,8 +34,8 @@
       <pubDate>Mon, 09 Aug 2021 14:45:15 -0500</pubDate>
       
       <guid>https://danielfaguilar.github.io/about/</guid>
-      <description>Hello! I&amp;rsquo;m an Android Developer, I like to write code that is extensible and maintainable using Java, Kotlin or both, for that reason I use different architectural patterns as MVVM, MVP and MVC. Also I use design patterns and strive for the compliance of the SOLID principles.
-I have deeper understading of the Android Basic Components like Services, Activities, Fragments, Content Providers and Broadcast Receivers. Also have experience with reactive libraries like RxJava and RxAndroid.</description>
+      <description>Hello! My name is Daniel and I&amp;rsquo;m an Android Developer. I&amp;rsquo;ve been developing Android applications since 2017, I also did a certification as Android Professional Developer in the same year which you can checkout here. Since then I&amp;rsquo;ve been working in different Android projects.
+I like to write code that is extensible and maintainable using Java, Kotlin or both, for that reason I use different architectural patterns as MVVM, MVP and MVC.</description>
     </item>
     
   </channel>

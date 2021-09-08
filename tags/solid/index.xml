@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SOLID on Android Software Developer</title>
+    <link>https://danielfaguilar.github.io/tags/solid/</link>
+    <description>Recent content in SOLID on Android Software Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Aug 2021 21:41:47 -0500</lastBuildDate><atom:link href="https://danielfaguilar.github.io/tags/solid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Clean Architecture in Android: Part l</title>
+      <link>https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/</link>
+      <pubDate>Sun, 22 Aug 2021 21:41:47 -0500</pubDate>
+      
+      <guid>https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/</guid>
+      <description>In this series I&amp;rsquo;m going to share with you how I structure my code to follow the SOLID principles in order to have a Clean Architecture in Android.
+A little bit of background Clean Architecture Well, in short is a software design philosophy that encapsulates a set of principles that help us as a developers to create a more scalable applications, this principles are the SOLID principles. So it isn&amp;rsquo;t platform dependent, you can use it in any software you develop with any platform.</description>
+    </item>
+    
+  </channel>
+</rss>

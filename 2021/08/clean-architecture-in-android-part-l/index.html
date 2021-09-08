@@ -7,37 +7,43 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.87.0 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Luis Daniel Aguilar">
-<meta name="keywords" content="">
-<meta name="description" content="My Cuisine App Available on the Google Play Store
+<meta name="keywords" content="tech">
+<meta name="description" content="In this series I&rsquo;m going to share with you how I structure my code to follow the SOLID principles in order to have a Clean Architecture in Android.
+A little bit of background Clean Architecture Well, in short is a software design philosophy that encapsulates a set of principles that help us as a developers to create a more scalable applications, this principles are the SOLID principles. So it isn&rsquo;t platform dependent, you can use it in any software you develop with any platform.">
 
-Technical features  Architectural pattern MVVM and MVI Screaming Architecture Dark theme support Reactive extensions  RxJava and RxAndroid   Room for database Dagger Hilt for the dependecy injection Navigation component Kotlin Coroutines Kotlin JUnit, espresso and mockito for testing  Favorez App When the pandemic came I see an opportunity to help other people to make an extra income doing home delivery.">
 
-
-<meta property="og:description" content="My Cuisine App Available on the Google Play Store
-
-Technical features  Architectural pattern MVVM and MVI Screaming Architecture Dark theme support Reactive extensions  RxJava and RxAndroid   Room for database Dagger Hilt for the dependecy injection Navigation component Kotlin Coroutines Kotlin JUnit, espresso and mockito for testing  Favorez App When the pandemic came I see an opportunity to help other people to make an extra income doing home delivery.">
+<meta property="og:description" content="In this series I&rsquo;m going to share with you how I structure my code to follow the SOLID principles in order to have a Clean Architecture in Android.
+A little bit of background Clean Architecture Well, in short is a software design philosophy that encapsulates a set of principles that help us as a developers to create a more scalable applications, this principles are the SOLID principles. So it isn&rsquo;t platform dependent, you can use it in any software you develop with any platform.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Projects">
-<meta name="twitter:title" content="Projects">
-<meta property="og:url" content="https://danielfaguilar.github.io/projects/">
-<meta property="twitter:url" content="https://danielfaguilar.github.io/projects/">
+<meta property="og:title" content="Clean Architecture in Android: Part l">
+<meta name="twitter:title" content="Clean Architecture in Android: Part l">
+<meta property="og:url" content="https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/">
+<meta property="twitter:url" content="https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/">
 <meta property="og:site_name" content="Android Software Developer">
-<meta property="og:description" content="My Cuisine App Available on the Google Play Store
-
-Technical features  Architectural pattern MVVM and MVI Screaming Architecture Dark theme support Reactive extensions  RxJava and RxAndroid   Room for database Dagger Hilt for the dependecy injection Navigation component Kotlin Coroutines Kotlin JUnit, espresso and mockito for testing  Favorez App When the pandemic came I see an opportunity to help other people to make an extra income doing home delivery.">
-<meta name="twitter:description" content="My Cuisine App Available on the Google Play Store
-
-Technical features  Architectural pattern MVVM and MVI Screaming Architecture Dark theme support Reactive extensions  RxJava and RxAndroid   Room for database Dagger Hilt for the dependecy injection Navigation component Kotlin Coroutines Kotlin JUnit, espresso and mockito for testing  Favorez App When the pandemic came I see an opportunity to help other people to make an extra income doing home delivery.">
+<meta property="og:description" content="In this series I&rsquo;m going to share with you how I structure my code to follow the SOLID principles in order to have a Clean Architecture in Android.
+A little bit of background Clean Architecture Well, in short is a software design philosophy that encapsulates a set of principles that help us as a developers to create a more scalable applications, this principles are the SOLID principles. So it isn&rsquo;t platform dependent, you can use it in any software you develop with any platform.">
+<meta name="twitter:description" content="In this series I&rsquo;m going to share with you how I structure my code to follow the SOLID principles in order to have a Clean Architecture in Android.
+A little bit of background Clean Architecture Well, in short is a software design philosophy that encapsulates a set of principles that help us as a developers to create a more scalable applications, this principles are the SOLID principles. So it isn&rsquo;t platform dependent, you can use it in any software you develop with any platform.">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2021-08-09T17:22:50">
+    <meta property="article:published_time" content="2021-08-22T21:41:47">
   
   
-    <meta property="article:modified_time" content="2021-08-09T17:22:50">
+    <meta property="article:modified_time" content="2021-08-22T21:41:47">
   
   
   
+    
+      <meta property="article:section" content="Architectural Patterns">
+    
+  
+  
+    
+      <meta property="article:tag" content="architecture">
+    
+      <meta property="article:tag" content="SOLID">
+    
   
 
 
@@ -49,6 +55,12 @@ Technical features  Architectural pattern MVVM and MVI Screaming Architecture Da
 
 
 
+  <meta property="og:image" content="https://danielfaguilar.github.io/images/mac-thumb.png">
+  <meta property="twitter:image" content="https://danielfaguilar.github.io/images/mac-thumb.png">
+
+
+  <meta property="og:image" content="https://danielfaguilar.github.io/images/mac.jpg">
+  <meta property="twitter:image" content="https://danielfaguilar.github.io/images/mac.jpg">
 
 
 
@@ -57,14 +69,14 @@ Technical features  Architectural pattern MVVM and MVI Screaming Architecture Da
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/3ab8ddbb12b69b67f30786e8b4143a87?s=640">
 
 
-    <title>Projects</title>
+    <title>Clean Architecture in Android: Part l</title>
 
     <link rel="icon" href="images/favicon-2.png">
     
 
     
 
-    <link rel="canonical" href="https://danielfaguilar.github.io/projects/">
+    <link rel="canonical" href="https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -84,7 +96,7 @@ Technical features  Architectural pattern MVVM and MVI Screaming Architecture Da
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="1">
+      <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="https://danielfaguilar.github.io/">Android Software Developer</a>
@@ -104,7 +116,7 @@ Technical features  Architectural pattern MVVM and MVI Screaming Architecture Da
   
 </header>
 
-      <nav id="sidebar" data-behavior="1">
+      <nav id="sidebar" data-behavior="4">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
@@ -201,135 +213,93 @@ Technical features  Architectural pattern MVVM and MVI Screaming Architecture Da
 </nav>
 
       
-
-      <div id="main" data-behavior="1"
-        class="
-               hasCoverMetaIn
-               ">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
-          
-          
-            <div class="post-header main-content-wrap text-left">
+  <div class="post-header-cover
+              text-center
+              post-header-cover--full"
+       style="background-image:url('/images/mac.jpg')"
+       data-behavior="4">
+    
+      <div class="post-header main-content-wrap text-center">
   
     <h1 class="post-title" itemprop="headline">
-      Projects
+      Clean Architecture in Android: Part l
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2021-08-09T17:22:50-05:00">
+      <time itemprop="datePublished" datetime="2021-08-22T21:41:47-05:00">
         
-  August 9, 2021
+  August 22, 2021
 
       </time>
     
     
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://danielfaguilar.github.io/categories/architectural-patterns">Architectural Patterns</a>
+    
+  
+
   </div>
 
 </div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="4"
+        class="hasCover
+               hasCoverMetaIn
+               hasCoverCaption">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+            <span class="post-header-cover-caption caption">Clean Architecture</span>
+          
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <h1 id="my-cuisine-app">My Cuisine App</h1>
-<p><img src="https://danielfaguilar.github.io/images/mi_cocina.png" alt="Favorez Apps" title="Food and Drink">
-<div class="alert primary ">
-  <p>Available on the
-<a href="https://play.google.com/store/apps/details?id=com.everpym.favorez">Google Play Store</a></p>
-</div></p>
-<h3 id="technical-features">Technical features</h3>
+              <p>In this series I&rsquo;m going to share with you how I structure my code to follow the SOLID principles in order to have a Clean Architecture in Android.</p>
+<h1 id="a-little-bit-of-background">A little bit of background</h1>
+<h2 id="clean-architecture">Clean Architecture</h2>
+<p>Well, in short is a software design philosophy that encapsulates a set of principles that help us as a developers to create a more scalable applications, this principles are the SOLID principles. So it isn&rsquo;t platform dependent, you can use it in any software you develop with any platform.</p>
+<h2 id="solid-principles">SOLID Principles</h2>
+<p>SOLID refers to the principles that should drive our design decisions in the development process</p>
 <ul>
-<li>Architectural pattern MVVM and MVI</li>
-<li>Screaming Architecture</li>
-<li>Dark theme support</li>
-<li>Reactive extensions
-<ul>
-<li>RxJava and RxAndroid</li>
+<li>Single Responsability(S). 
+This means that the classes you create should have only a single responsability. For example, back in the day we used to put most of the responsabilities in our Activities. That should be changed</li>
+<li>Open-Closed Principle(O). This principle stands that we should design our classes to be extensible for another subclases but not modifiable</li>
+<li>Liskov Substitution Principle(L). This means that if we use a class somewhere we should be able to substitute this class with any of his subclases.</li>
+<li>Inteface Segregation(I). You should analize your interfaces and check if they can be divided in more interfaces</li>
+<li>Depdendency Injection(D). The instances of the dependencies that you use in your application should be instantiated by a container. In the case of Android we have three options to deal with DI: Service Locator Pattern, Dagger, Dagger Android and Hilt.</li>
 </ul>
-</li>
-<li>Room for database</li>
-<li>Dagger Hilt for the dependecy injection</li>
-<li>Navigation component</li>
-<li>Kotlin Coroutines</li>
-<li>Kotlin</li>
-<li>JUnit, espresso and mockito for testing</li>
-</ul>
-<h1 id="favorez-app">Favorez App</h1>
-<p>When the pandemic came I see an opportunity to help other people to make an extra income doing home delivery. This application helps to connect people that need to buy something from local stores with delivery mans.</p>
-<p><img src="https://danielfaguilar.github.io/images/banner_2.png" alt="Favorez Apps" title="Delivery app">
-<div class="alert primary ">
-  <p>Available on the
-<a href="https://play.google.com/store/apps/details?id=com.everpym.favorez">Google Play Store</a></p>
-</div></p>
-<h3 id="features">Features</h3>
-<ul>
-<li>The client can check in real time the location of his order.</li>
-<li>The delivery man receives exact instructions to deliver the order.</li>
-<li>The user can decide to be delivery man or just client so you can switch between client profile or delivery man anytime.</li>
-<li>You can start adding products directly from one of the business registered in the <strong>Favorez Business App</strong></li>
-</ul>
-<h3 id="technical-features-1">Technical features</h3>
-<ul>
-<li>Architectural pattern MVVM</li>
-<li>Uses Google Maps and directions API</li>
-<li>Consume web services from AWS</li>
-<li>Uses Firebase
-<ul>
-<li>Authentication</li>
-<li>Cloud messaging</li>
-<li>Firestore</li>
-<li>Storage</li>
-<li>Cloud functions</li>
-<li>Crashlytics</li>
-</ul>
-</li>
-<li>Reactive extensions
-<ul>
-<li>RxJava and RxAndroid</li>
-</ul>
-</li>
-<li>SQLite for database</li>
-<li>CameraX</li>
-<li>Java and Kotlin</li>
-<li>Material Design</li>
-<li>Custom Animations</li>
-<li>JUnit, espresso and mockito for testing</li>
-</ul>
-<h1 id="favorez-for-business">Favorez for Business</h1>
-<p>I have created this application to help the local businesses to offer home delivery for his clients, by paying low or no commissions.
-The information that the business register here appears in the Favorez App for clients.
-In this application the business can manage his information, his business hours and register his products including a photo, name, description and his availability.</p>
-<p><img src="https://danielfaguilar.github.io/images/banner_3.png" alt="Favorez Apps" title="Delivery app">
-<div class="alert primary ">
-  <p>Available on the
-<a href="https://play.google.com/store/apps/details?id=com.favorezapp.favorezbusiness">Google Play Store</a></p>
-</div></p>
-<h3 id="technical-features-2">Technical features</h3>
-<ul>
-<li>Architectural pattern MVP</li>
-<li>Consume web services from AWS</li>
-<li>Uses Firebase
-<ul>
-<li>Authentication</li>
-<li>Realtime database</li>
-<li>Storage</li>
-<li>Cloud functions</li>
-<li>Crashlytics</li>
-</ul>
-</li>
-<li>SQLite for database</li>
-<li>CameraX</li>
-<li>Java</li>
-<li>Material Design</li>
-<li>Custom Animations</li>
-<li>JUnit, espresso and mockito for testing</li>
-</ul>
+<h1 id="applying-it-to-our-android-projects">Applying it to our Android Projects</h1>
+<h2 id="screaming-architecure">Screaming Architecure</h2>
+<p>In this part we are going to organize or packages or modules by the name of the feature they represent. At first glance you can identify what package contains what, and therefore is more easy to make changes.
+For example:</p>
+<p><img src="https://danielfaguilar.github.io/images/packages.jpg" alt="Screaming architecture" title="Screaming architecture"></p>
+<p>Then in each feature package you can use an architecture by layers, where the data layer contains the components related to the data sources, the domain layer the business logic and last but not least the presentation layer where we put the framework related code, the views, the activities, fragments, services, etc.</p>
+<p>Having the architecture in that way we can test the data and domain layer without messing with the framework code.</p>
 
               
             </div>
           </div>
           <div id="post-footer" class="post-footer main-content-wrap">
             
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://danielfaguilar.github.io/tags/architecture/">architecture</a>
+
+  <a class="tag tag--primary tag--small" href="https://danielfaguilar.github.io/tags/solid/">SOLID</a>
+
+                  </div>
+                
               
             
             <div class="post-actions-wrap">
@@ -347,7 +317,7 @@ In this application the business can manage his information, his business hours 
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://danielfaguilar.github.io/about/" data-tooltip="About">
+                <a class="post-action-btn btn btn--disabled">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -365,19 +335,19 @@ In this application the business can manage his information, his business hours 
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://danielfaguilar.github.io/projects/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://danielfaguilar.github.io/projects/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://danielfaguilar.github.io/projects/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -417,7 +387,7 @@ In this application the business can manage his information, his business hours 
 </footer>
 
       </div>
-      <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
         <div class="post-actions-wrap">
   
       <nav >
@@ -433,7 +403,7 @@ In this application the business can manage his information, his business hours 
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://danielfaguilar.github.io/about/" data-tooltip="About">
+                <a class="post-action-btn btn btn--disabled">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -451,19 +421,19 @@ In this application the business can manage his information, his business hours 
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://danielfaguilar.github.io/projects/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://danielfaguilar.github.io/projects/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://danielfaguilar.github.io/projects/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://danielfaguilar.github.io/2021/08/clean-architecture-in-android-part-l/">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -488,24 +458,24 @@ In this application the business can manage his information, his business hours 
 </div>
 
       </div>
-      <div id="share-options-bar" class="share-options-bar" data-behavior="1">
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
   <i id="btn-close-shareoptions" class="fa fa-close"></i>
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdanielfaguilar.github.io%2Fprojects%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdanielfaguilar.github.io%2F2021%2F08%2Fclean-architecture-in-android-part-l%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fdanielfaguilar.github.io%2Fprojects%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fdanielfaguilar.github.io%2F2021%2F08%2Fclean-architecture-in-android-part-l%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fdanielfaguilar.github.io%2Fprojects%2F">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fdanielfaguilar.github.io%2F2021%2F08%2Fclean-architecture-in-android-part-l%2F">
           <i class="fa fa-google-plus"></i><span>Share on Google&#43;</span>
         </a>
       </li>
@@ -595,9 +565,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/danielfaguilar.github.io\/projects\/';
+          this.page.url = 'https:\/\/danielfaguilar.github.io\/2021\/08\/clean-architecture-in-android-part-l\/';
           
-            this.page.identifier = '\/projects\/'
+            this.page.identifier = '\/2021\/08\/clean-architecture-in-android-part-l\/'
           
         };
         (function() {
