@@ -18,14 +18,12 @@ A little bit of background Clean Architecture Well, in short is a software desig
     </item>
     
     <item>
-      <title>Work Experience</title>
+      <title>Projects</title>
       <link>https://danielfaguilar.github.io/projects/</link>
       <pubDate>Mon, 09 Aug 2021 17:22:50 -0500</pubDate>
       
       <guid>https://danielfaguilar.github.io/projects/</guid>
-      <description>Simple Marketing | Digital Agency Contact: contacto@simplemarketing.com.mx
-Recently I&amp;rsquo;ve worked for this digital agency and have created the following applications that you can checkout on the Google Play Store:
-My Kitchen App Available on the Google Play Store
+      <description>My Kitchen App Available on the Google Play Store
 
 Technical features  Architectural pattern MVVM and MVI Screaming Architecture Dark theme support Reactive extensions  RxJava and RxAndroid   Room for database Dagger Hilt for the dependecy injection Navigation component Kotlin Coroutines Kotlin JUnit, espresso and mockito for testing  Favorez App This application helps to connect people that need to buy something from local stores with delivery mans.</description>
     </item>
